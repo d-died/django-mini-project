@@ -1,0 +1,8 @@
+<h2>ICE CREAMAMAMAMAMAM!!!!!! <a href="{% url 'icecream_create' %}">(+)</a></h2>
+<ul>
+  {% for icecream in icecreams %}
+  <li>
+    <a href="{% url 'icecream_detail' pk=icecream.pk %}">{{ icecream.flavor }}</a>
+  </li>
+  {% endfor %}
+</ul>

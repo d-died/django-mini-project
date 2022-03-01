@@ -1,0 +1,12 @@
+<!-- {% block content %} -->
+
+<h2>Ice Cream!!!!!!<a href="{% url 'icecream_edit' pk=icecream.pk %}">(edit)</a></h2>
+<a href="{% url 'icecream_delete' pk=icecream.pk %}">Delete</a>
+<h3> {{ icecream.flavor }} <a href="">(+)</a></h3>
+<div>
+  <p>
+    {{ icecream.description }}
+  </p>
+</div>
+
+<!-- {% endblock %} -->
